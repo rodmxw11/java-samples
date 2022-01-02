@@ -1,7 +1,8 @@
 apply plugin: 'java'
 apply plugin: 'application'
+apply plugin: 'groovy'
 
-mainClassName = 'DriveQuickstart'
+mainClassName = 'DriveQuickstartGroovy'
 sourceCompatibility = 11
 targetCompatibility = 11
 version = '1.0'
@@ -14,4 +15,6 @@ dependencies {
     implementation 'com.google.api-client:google-api-client:1.32.2'
     implementation 'com.google.oauth-client:google-oauth-client-jetty:1.32.1'
     implementation 'com.google.apis:google-api-services-drive:v3-rev20211107-1.32.1'
+    // https://mvnrepository.com/artifact/org.codehaus.groovy/groovy-all
+    implementation 'org.codehaus.groovy:groovy-all:3.0.9'
 }
